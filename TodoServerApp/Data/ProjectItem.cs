@@ -1,10 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
 
 namespace TodoServerApp.Data
 {
-    public class TaskItem
+    public class ProjectItem
     {
         public int Id { get; set; }
         [Required]
@@ -14,8 +12,7 @@ namespace TodoServerApp.Data
         public DateTime? CreatedDate { get; set; }
         public DateTime? FinishDate { get; set; }
 
-        public int? ProjId { get; set; }
-        [ForeignKey("ProjId")]
-        public ProjectItem Proj { get; set; }
+        public DateTime? RegisteredDate { get; set; }
+
     }
 }

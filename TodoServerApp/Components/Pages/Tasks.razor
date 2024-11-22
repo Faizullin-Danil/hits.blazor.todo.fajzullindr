@@ -6,6 +6,7 @@
 
 <PageTitle>Задачи</PageTitle>
 
+
 <h1>Мои задачи</h1>
 
 <div class="container">
@@ -30,6 +31,8 @@
                     <div class="card-body">
                         <p>@task.Description</p>
                         <p>@task.CreatedDate</p>
+                        <p><strong>Проект:</strong> @(task.Proj != null ? task.Proj.Title : "Не назначен")</p>
+                        <p><strong>Дата создания:</strong> @task.CreatedDate</p>
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-primary" href="tasks/@task.Id">Изменить</a>

@@ -32,5 +32,25 @@ namespace TodoServerApp.Data.Services
         {
             throw new NotImplementedException();
         }
+
+        public Task<IEnumerable<ProjectItem>> GetAllProjectsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SaveProjectAsync(ProjectItem item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ProjectItem> GetProjectAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteProjectsAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
